@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.juliodebuen.aplicacionqueabreotrasaplicaciones.MainActivity">
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Mostrar Mapa"
+        android:onClick="mostrarMapa"/>
+    <Button
+        android:id="@+id/btnIntentChooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Mostrar Chooser"
+        android:onClick="mostrarChooser"/>
+    <Button
+        android:id="@+id/btnLlamada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Llamar"
+        android:onClick="realizarLlamada"/>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Login telefono"
+        android:onClick="phoneLogin"/>
+    <Button
+        android:id="@+id/btnMessenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="FB Messenger"
+        android:onClick="facebook"/>
+</LinearLayout>
