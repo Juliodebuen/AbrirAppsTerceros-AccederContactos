@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AplicacionQueAbreOtrasAplicaciones.iml" filepath="$PROJECT_DIR$/AplicacionQueAbreOtrasAplicaciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoginAPIS.iml" filepath="$PROJECT_DIR$/LoginAPIS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -2,6 +2,8 @@
     <string name="app_name">AplicacionQueAbreOtrasAplicaciones</string>
 
     <string name="FACEBOOK_APP_ID">2148000345217616</string>
-    <string name="ACCOUNT_KIT_CLIENT_TOKEN">6e4ee080772550c77a088ba170d73b2b</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">2d48565cb6bc1cb88d1f4b561dfba911</string>
+
+    <string name="fb_login_protocol_scheme">fb2148000345217616</string>
 
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,39 +7,37 @@
     android:orientation="vertical"
     tools:context="com.example.juliodebuen.aplicacionqueabreotrasaplicaciones.MainActivity">
 
-    <Button
-        android:id="@+id/btnMapa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Mostrar Mapa"
-        android:onClick="mostrarMapa"/>
-    <Button
-        android:id="@+id/btnIntentChooser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Mostrar Chooser"
-        android:onClick="mostrarChooser"/>
-    <Button
-        android:id="@+id/btnLlamada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Llamar"
-        android:onClick="realizarLlamada"/>
+
     <Button
         android:id="@+id/btnLogin"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Login telefono"
+        android:text="Entrar con telefono"
         android:onClick="phoneLogin"/>
-    <Button
-        android:id="@+id/btnMessenger"
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="FB Messenger"
-        android:onClick="facebook"/>
-</LinearLayout>
+        android:layout_above="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp" />
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/login_button_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/login_button"
+        android:layout_marginBottom="12dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/login_button_twitter"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/login_google"/>
+</RelativeLayout>

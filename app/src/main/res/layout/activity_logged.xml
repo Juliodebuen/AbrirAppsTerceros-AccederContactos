@@ -4,41 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.example.juliodebuen.aplicacionqueabreotrasaplicaciones.loggedActivity">
-
-    <EditText
-        android:id="@+id/etMensaje"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Escribe un mensaje"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/etTelefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:hint="Selecciona Contacto"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:focusable="false"/>
+        <EditText
+            android:id="@+id/etMensaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Escribe un mensaje"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enviar Mensaje"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="58dp"
-        android:onClick="openWhatsApp"
-        tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Selecciona Contacto"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="false"/>
+
+        <Button
+            android:id="@+id/btnWhatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Mensaje vía whatsapp"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="58dp"
+            android:onClick="openWhatsApp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnMessenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Mensaje vía Messenger"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="58dp"
+            android:onClick="facebook"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btnLlamada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llamar a contacto"
+            android:onClick="realizarLlamada"/>
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:hint="Escribe una direccion"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/btnMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Maps"
+            android:onClick="mostrarMapa"/>
+
+
+        <Button
+            android:id="@+id/btnIntentChooser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Chooser"
+            android:onClick="mostrarChooser"/>
+        <Button
+            android:id="@+id/btnCamara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camara"
+            android:onClick="tomarFoto"/>
+
+        <Button
+            android:id="@+id/btnNotificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notificacion"
+            android:text="Notificaciones"/>
+        <Button
+            android:id="@+id/btnPublicarFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="publicarFacebook"
+            android:text="publicar en facebook"/>
+    </LinearLayout>
 </LinearLayout>
+
